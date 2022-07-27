@@ -1,0 +1,229 @@
+/* common */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family:"SF Pro JP","SF Pro Text","SF Pro Icons","Hiragino Kaku Gothic Pro","ヒラギノ角ゴ Pro W3","メイリオ","Meiryo","ＭＳ Ｐゴシック","Helvetica Neue","Helvetica","Arial",sans-serif;
+  font-weight: normal;
+}
+
+.container {
+  width: calc(100% - 32px);
+  /* outline: 2px solid red; */
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+p {
+  margin: 0;
+  line-height: 2;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* header */
+
+header {
+  background-color: #111;
+  color: #fff;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  padding: 16px;
+}
+
+nav ul li a:hover {
+  opacity: 0.7;
+}
+
+/* main */
+
+main section {
+  margin-bottom: 80px;
+}
+
+.hero img{
+  /* top: 0;
+  left: 0; */
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.title {
+  font-size: 30px;
+  margin: 16px 0;
+  font-weight: bold;
+  text-align: center;
+  border-bottom: 2px solid #111;
+}
+
+/* profile */
+
+.introduction {
+  display: flex;
+  justify-content: space-between;
+}
+
+.desc h1 {
+  font-weight: bold;
+  color: grey;
+  margin-bottom: 16px;
+}
+
+.desc p + p {
+  margin-top: 16px;
+  font-weight: bold;
+}
+
+.introduction .pic {
+  margin-left: 16px;
+}
+
+/* service */
+
+.service ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.service ul li {
+  width: calc((100% - 80px) / 3);
+}
+
+.featJa {
+  font-size: 24px;
+  text-align: center;
+}
+
+.featEn {
+  font-size: 14px;
+  text-align: center;
+}
+
+.icon {
+  text-align: center;
+  font-size: 100px;
+}
+
+/* menu */
+
+.menu {
+  text-align: center;
+}
+
+.menu-table {
+  border: 1px solid black;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.menu-table td,
+.menu-table th {
+  padding: 8px;
+  text-align-last: left;
+}
+
+.menu-table thead {
+  background-color: gray;
+  color: white;
+}
+
+/* footer */
+
+footer {
+  background-color: #111;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.footer-menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact {
+  font-size: 24px;
+  align-items: center;
+}
+
+.copyright {
+  text-align: center;
+  font-size: 8px;
+  margin-top: 12px;
+}
+
+/* midium screen */
+
+@media (max-width: 768px) {
+
+  .hero {
+
+  }
+
+  .introduction {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+  }
+  
+  .introduction img {
+    margin-top: 16px;
+  }
+
+  .service ul {
+    display: block;
+  }
+
+  .service ul li {
+    width: 100%;
+    padding: 16px 0;
+  }
+
+  .icon {
+    font-size: 70px;
+  }
+
+  .footer-menu {
+    display: block;
+  }
+
+  .copyright {
+    text-align: right;
+  }
+}
