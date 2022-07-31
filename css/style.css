@@ -40,6 +40,10 @@ a {
   color: inherit;
 }
 
+img {
+  vertical-align: bottom;
+}
+
 /* header */
 
 header {
@@ -169,12 +173,13 @@ main section {
 footer {
   background-color: #111;
   color: #fff;
-  padding: 20px 0;
+  padding-bottom: 36px;
 }
 
 .footer-menu {
   display: flex;
   justify-content: space-between;
+  padding: 24px 0;
 }
 
 .contact {
@@ -185,16 +190,11 @@ footer {
 .copyright {
   text-align: center;
   font-size: 8px;
-  margin-top: 12px;
 }
 
 /* midium screen */
 
 @media (max-width: 768px) {
-
-  .hero {
-
-  }
 
   .introduction {
     display: block;
@@ -225,5 +225,22 @@ footer {
 
   .copyright {
     text-align: right;
+  }
+
+  .global-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #555;
+  }
+
+  .global-nav ul li{
+    flex: 1;
+    text-align: center;
+  }
+
+  footer {
+    padding-bottom: 80px;
   }
 }
